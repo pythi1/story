@@ -1,0 +1,47 @@
+.driver-form {
+    align-items: center;
+
+}
+
+.heading{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+table {
+    width: 100%;
+    height: 90vh;
+    font-size: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+th {
+    height: 20px;
+}
+
+tr td {
+    height: 15px;
+}
+
+tr td:first-child{
+    width: 14%;
+}
+
+
+input , textarea {
+    border: none;
+    width: 95%;
+}
+
+input:focus {
+    border: none;
+}
+
+.btn{
+    border: none;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 20px;
+}
