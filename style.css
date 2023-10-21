@@ -33,6 +33,7 @@ tr td:first-child{
 input , textarea {
     border: none;
     width: 95%;
+    font-size: 10px;
 }
 
 input:focus {
