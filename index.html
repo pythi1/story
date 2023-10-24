@@ -182,7 +182,7 @@
 
             <tr>
                 <td> <b>Date Of Joining:</b> </td>
-                <td colspan="2"> <input type="text" name="vehicel-no" id="v-no"> </td>
+                <td colspan="2"> <p  contenteditable="true" id="date"  > </td>
             </tr>
 
             <tr>
@@ -192,7 +192,7 @@
 
             <tr>
                 <td> <b>Date:</b> </td>
-                <td colspan="2"> <input type="text" name="vehicel-no" id="v-no"> </td>
+                <td colspan="2"> <p  contenteditable="true" id="date"  > </p> </td>
 
             </tr>
 
@@ -203,10 +203,23 @@
 
     </div>
 
-       <script>
+     <script>
         function Print() {
             window.print();
         }
+
+
+        const date = new Date();
+
+        var day = date.getDate();
+        var month = date.getMonth() + 1;
+        var year = date.getFullYear();
+
+        var currentdate = day + " / " + month + " / " + year
+
+        document.querySelectorAll("#date").forEach(element => {
+            element.innerHTML = currentdate;
+        })
 
     </script>
 </body>
